@@ -1,0 +1,13 @@
+---
+Name: myproject
+---
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: app
+
+Playground:
+    extensions:
+        - AddressExtension
+        
+SilverStripe\Assets\Image:
+    extensions:
+        - GalleryImageExtension
