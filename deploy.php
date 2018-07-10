@@ -20,7 +20,13 @@ host('staging')
     //->configFile('~/.ssh/config')
     ->identityFile('~/.ssh/id_rsa')
     ->stage('staging')
-    ->set('deploy_path', '/var/test-dev');    
+    ->set('deploy_path', '/var/test-dev'); 
+
+task('pwd', function(){
+    $result = run ('pwd');
+    Writeln("Curernt Directory: $result");
+        }
+    );
     
 
 desc('Deploy your project');
